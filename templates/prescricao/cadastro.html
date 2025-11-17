@@ -1,13 +1,8 @@
 
 
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <title>Emitir Prescrição</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
   <h2>Emitir receita digital</h2>
   <form method="post">
     <label for="paciente">Paciente</label>
@@ -27,5 +22,5 @@
 
     <button type="submit">Emitir</button>
   </form>
-</body>
-</html>
+{% endblock %}
+

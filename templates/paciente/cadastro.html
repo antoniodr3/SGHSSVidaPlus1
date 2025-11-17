@@ -1,22 +1,19 @@
 
 
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8">
-  <title>Cadastro de Paciente</title>
-</head>
-<body>
+{% extends "base.html" %}
+{% block content %}
   <h2>Cadastrar paciente</h2>
   <form method="post">
     <label for="nome">Nome</label>
     <input id="nome" name="nome" type="text" required>
+
     <label for="idade">Idade</label>
     <input id="idade" name="idade" type="number" min="0" required>
+
     <label for="documento">Documento</label>
     <input id="documento" name="documento" type="text" required>
+
     <button type="submit">Cadastrar</button>
   </form>
-</body>
-</html>
+{% endblock %}

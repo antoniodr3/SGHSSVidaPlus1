@@ -1,0 +1,23 @@
+
+
+
+{% extends "base.html" %}
+{% block content %}
+  <h2>Solicitar exame</h2>
+  <form method="post">
+    <label for="paciente">Paciente</label>
+    <input id="paciente" name="paciente" type="text" required>
+
+    <label for="profissional">Profissional solicitante</label>
+    <input id="profissional" name="profissional" type="text" required>
+
+    <label for="tipo">Tipo de exame</label>
+    <input id="tipo" name="tipo" type="text" required>
+
+    <label for="resultado">Resultado (opcional)</label>
+    <textarea id="resultado" name="resultado"></textarea>
+
+    <button type="submit">Registrar</button>
+  </form>
+{% endblock %}
+

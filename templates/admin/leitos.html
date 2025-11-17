@@ -1,0 +1,21 @@
+
+
+
+{% extends "base_admin.html" %}
+{% block admin_content %}
+  <h2>Gerenciar leitos</h2>
+  <form method="post">
+    <label for="numero">Número do leito</label>
+    <input id="numero" name="numero" type="text" required>
+
+    <label for="status">Status</label>
+    <select id="status" name="status" required>
+      <option value="livre">Livre</option>
+      <option value="ocupado">Ocupado</option>
+      <option value="manutencao">Manutenção</option>
+    </select>
+
+    <button type="submit">Registrar</button>
+  </form>
+{% endblock %}
+

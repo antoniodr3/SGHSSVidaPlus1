@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>VidaPlus</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+  <header>
+    <strong>VidaPlus</strong>
+    <nav style="margin-top:8px;">
+      <a href="/">Home</a>
+      <a href="/paciente/cadastro">Paciente</a>
+      <a href="/profissional/cadastro">Profissional</a>
+      <a href="/consulta/agendar">Consulta</a>
+      <a href="/prontuario/cadastro">Prontuário</a>
+      <a href="/prescricao/cadastro">Prescrição</a>
+      <a href="/exame/cadastro">Exame</a>
+      <a href="/admin/leitos">Leitos</a>
+      <a href="/admin/relatorios">Relatórios</a>
+      <a href="/telemedicina/sala">Telemedicina</a>
+      <a href="/seguranca/login">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    Sistema VidaPlus — Exemplo didático
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+
+
+
+/* admin.css */
+main {
+  border: 2px solid #0d6efd;
+  background: #eef6ff;
+}
+
+h2 {
+  color: #0d6efd;
+}
+
+form {
+  background: #fff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
